@@ -3,6 +3,7 @@
   --fuenteParrafos: "Open Sans" sans-serif;
 
   --primario: #784d3c;
+  --claro:#e1e1e1;
   --blanco: #ffffff;
   --negro: #000000;
 }
@@ -77,7 +78,7 @@ img {
   /*centra imagen en horizontal y vertical cuando minimizas
   la página */
   background-position: center center;
-  
+
 }
 .header__texto{
     text-align: center;
@@ -96,10 +97,11 @@ img {
 
 @media  (min-width:768px ){
     .barra{
-        display: flex; 
-        justify-content: space-between; 
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        
+        margin: 0  5rem;
+
 
       }
 }
@@ -111,7 +113,7 @@ img {
 font-weight: 400;
 }
 .logo__bold{
-   font-weight: 700; 
+   font-weight: 700;
 }
 
 
@@ -132,3 +134,17 @@ font-weight: 400;
 }
 
 
+/* Contenido */
+@media(min-width:768px){
+  .contenido-principal{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+column-gap: 4rem;
+  }
+
+.centrada{
+
+  border-bottom:1px solid var(--claro) ;
+}
+
+}
