@@ -150,6 +150,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  border: none;
 }
 @media (min-width: 768px) {
   .boton {
@@ -157,6 +158,10 @@ img {
     y width, en cambio se utiliza inline-block */
     display: inline-block;
   }
+  
+}
+.boton:hover{
+  cursor: pointer;
 }
 
 .boton--primario {
@@ -268,14 +273,23 @@ img {
 }
 .campo {
   display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 .campo__label {
   flex: 0 0 9rem;
+  text-align: right;
+ 
 }
 
 .campo__field {
   flex: 1;
+  border: 1px solid var(--claro);
 }
 
 .campo__field--textarea {
+  flex: 1;
+  height: 20rem;
+  border: 1px solid var(--claro);
+
 }
